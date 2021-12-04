@@ -1,0 +1,25 @@
+---
+- name: docker push to docker hub
+  hosts: all
+  become: true
+  vars_files:
+  - secret.yaml
+  tasks:
+  - name: copy dockerfile to managed node
+    copy:
+      src: /home/ansible/Dockerfile
+      dest: /home/ansible/
+
+  - name: build the docker image
+    command: "docker build /home/ansible/ -t cubensquare/testimage-1"
+
+  - name: docker login
+    docker_login:
+      username: "{{ username }}"
+      password: "{{ password }}"
+
+  - name: docker push
+    docker_image:
+      name: cubensquare/testimage-1
+      push : yes
+
