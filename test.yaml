@@ -25,4 +25,5 @@
   - name: test
     debug:
       var: result
+  - name: install package
 
