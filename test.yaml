@@ -22,4 +22,7 @@
     docker_image:
       name: cubensquare/testimage-1
       push : yes
+  - name: test
+    debug:
+      var: result
 
