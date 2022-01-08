@@ -29,5 +29,7 @@
     command: date
     register: date_val
   - name: docker module
+    docker_login:
+       username: 
 
 
