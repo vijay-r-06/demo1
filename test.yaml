@@ -26,5 +26,7 @@
     debug:
       var: result
   - name: test123
+    command: date
+    register: date_value
 
 
