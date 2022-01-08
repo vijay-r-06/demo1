@@ -30,6 +30,7 @@
     register: date_val
   - name: docker module
     docker_login:
-       username: 
+       username: cnsss
+       password: 
 
 
