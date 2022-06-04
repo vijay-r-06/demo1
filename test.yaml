@@ -36,6 +36,7 @@
     docker_container:
        name: cubensquare
        image: cubensquare/testimage-1
+  - name: docker_login
 
 
 
