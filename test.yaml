@@ -32,6 +32,11 @@
     docker_login:
        username: cnsss
        password: 
+       
+  - name: create container
+    docker_container:
+       name: cubensquare
+       image: cubensquare/testimage-1
 
 
 
