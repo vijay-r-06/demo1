@@ -1,5 +1,6 @@
 ---
 #test line added
+#new modification added
 - name: docker push to docker hub registry
   hosts: all
   become: true
